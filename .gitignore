@@ -1,0 +1,55 @@
+venv/
+activate
+activate.bat
+runserver.bat
+.env
+
+backups/
+
+#old file might be used in future
+config.py
+
+# Byte-compiled files
+*.py[cod]
+__pycache__/
+
+# Virtual environment
+venv/
+.env/
+
+# Flask specific
+instance/
+*.log
+
+# IDE/Editor specific
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# MySQL or MariaDB database files
+*.sql
+*.sqlite3
+
+# Test, coverage and linting reports
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+
+# Pytest
+.cache/
+
+# Sphinx documentation
+docs/_build/
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# Flask migrations folder (if using Flask-Migrate)
+migrations/
+
+# Other files or directories to ignore
+*.env

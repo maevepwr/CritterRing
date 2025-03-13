@@ -1,0 +1,17 @@
+/*
+#CritterRingDev #crMain{
+
+    border: 15px solid;
+    border-image-source: url('http://127.0.0.1:1000/images/border_100.png');
+    border-image-slice: 5; 
+    border-image-repeat: repeat;
+    
+}
+*/
+
+
+.headerButton{
+    border: solid 5px rgb(80, 176, 255);
+    border-radius: 5px;
+
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.cdnfonts.com/css/frutiger');
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+
+@media only screen and (min-width: 600px) {
+  #CritterRingDev {
+    margin: 0 auto;
+    padding: 15px; /* creates some space around the widget */
+
+    /*
+    font-family: 'Frutiger', sans-serif;
+    */
+    font-family: 'Public Pixel', sans-serif;
+
+    
+    max-width: 100%;
+    border: solid 1px black;
+  }
+
+
+  #CritterRingDev{
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: inline-block;
+
+    text-align: left;
+  }
+
+  #headerUpper{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+
+  .formClass{
+    font-size: 0.8em;
+    gap: 0.2em;
+    flex-direction: column;
+
+    display: none;
+  }
+
+  .formButtons{
+    display: flex;  
+  }
+
+
+  .formClass input{
+    height: 1.2em;
+    font-weight: bold;
+    border: solid 3px black;
+    font-family: inherit;
+    width: 15em;
+  }
+
+  .formClass input[type=radio]{display: none;}
+
+
+
+  .formClass label{
+    background-color:rgb(17, 98, 180);
+    padding: 0.5em;
+    border: solid 3px black;
+    font-size: 1.1em;
+  }
+
+  .formClass button{
+    background-color:rgb(17, 98, 180);
+    padding: 0.5em;
+    font-size: 1em;
+    border: solid 3px black;
+    font-family: 'Public Pixel', sans-serif;
+    flex-grow: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #menuContent{
+      /*Will be hidden by default otherwise*/
+      display: flex;  
+    }
+
+
+  #headerTitle{
+    font-weight: bold;
+    font-size: 2em;
+    font-family: 'Public Pixel', sans-serif;
+
+
+    margin: 0;
+
+
+  }
+
+
+  #headerButtonGroup{
+    margin-top: 0.5em;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+  }
+
+  .headerButton{
+    width: 5em;
+    height: 5em;
+    overflow-x: hidden;
+    display: flex;
+    background-color: blueviolet;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .headerButton img{
+    width: 90%; 
+    height: 90%;
+  }
+
+  .headerButton input{
+    display: none;
+  }
+
+
+  #crMain .page{
+    display: none;
+  }
+}

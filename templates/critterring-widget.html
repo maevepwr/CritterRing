@@ -1,0 +1,84 @@
+<div id="crMain">
+    <header>
+      <div id="headerUpper">
+            <p id="headerTitle">
+                {{ ringName }}
+            </p>
+            
+            
+            <div id="authForms">
+                <input type="radio" name="authForms" value="menuContent" id="menu" class="formClass">
+                <input type="radio" name="authForms" value="loginForm" id="login"  class="formClass">
+                <input type="radio" name="authForms" value="registerForm" id="register"  class="formClass">
+
+                <div id="menuContent" id="menuContent" class="authFormContent formClass formClassRow">
+                    <label name="authForms" for="login">Login</label>
+                    <label name="authForms" for="register">Register</label>
+                </div>
+                <form method="POST" name="loginForm" id="loginContent"  class="authFormContent formClass" action="http://{{ request.host }}/{{ url_for('login') }}">
+                    {{ loginForm.hidden_tag() }}  
+                    <input name="username" placeholder="Username">
+                    <input name="password" placeholder="Password">
+
+                    <div class="formButtons">
+                        <label name="authForms" for="menu">Back</label>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+                <form method="POST" name="registerForm" id="registerContent"  class="authFormContent formClass" action="http://{{ request.host }}/{{ url_for('register') }}">
+                    <input name="username" placeholder="Username">
+                    <input name="password" placeholder="Password">
+                    <input name="password_confirmation" placeholder="Conf. Password">
+                    <div class="formButtons">
+                        <label name="authForms" for="menu">Back</label>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+          </div>
+        </div>
+    {{ request.cookies.__dict__ }}
+      <div id="headerButtonGroup">
+        <label class="headerButton" for="home">
+            <input type="radio" name="page" value="home" id="home">
+            <img src="http://127.0.0.1:1000/static/svg/home.svg">
+        </label>
+        <label class="headerButton" for="irc">
+            <input type="radio" name="page" value="irc" id="irc">
+            Item 2
+        </label>
+        <label class="headerButton" for="item3">
+            <input type="radio" name="page" value="item3" id="item3">
+            Item 3
+        </label>
+        <label class="headerButton" for="item4">
+            <input type="radio" name="page" value="item4" id="item4">
+            Item 4
+        </label>
+        <label class="headerButton" for="item5">
+            <input type="radio" name="page" value="item5" id="item5">
+            Item 5
+        </label>
+    </div>
+    
+    <div id="crMain">
+        <div id="homeContent" class="page">
+            Home
+        </div>
+        <div id="ircContent" class="page">
+            IRC
+        </div>
+        <div id="item3Content" class="page">
+            Item 3 Content
+        </div>
+        <div id="item4Content" class="page">
+            Item 4 Content
+        </div>
+        <div id="item5Content" class="page">
+            Item 5 Content
+        </div>
+    </div>
+    </header>
+</div>
+
+
+
